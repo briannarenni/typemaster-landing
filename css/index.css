@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap');
 
 :root {
   --bright-orange: #F16718;
@@ -49,8 +49,12 @@ p {
 }
 
 button {
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Containers */
@@ -61,10 +65,22 @@ button {
   padding: 20px 15px;
 }
 
+/* Header rules */
 .header {
   display: flex;
   justify-content: space-between;
 }
+
+.header__cta-btn {
+  background-color: var(--light-gray);
+}
+
+.header__cta-btn:hover {
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
+
+/* Hero rules */
 
 .hero__text {
   display: flex;
@@ -75,4 +91,18 @@ button {
 .hero__cta-wrap {
   display: inline-flex;
   gap: 48px;
+}
+
+.hero__cta-btn {
+  background-color: var(--bright-orange);
+  color: var(--white);
+}
+
+.hero__cta-btn:hover {
+  background-color: var(--pale-orange);
+}
+
+.hero__cta-text {
+  font-weight: 600;
+  text-transform: uppercase;
 }
