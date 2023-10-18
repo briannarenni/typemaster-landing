@@ -29,6 +29,7 @@
 }
 
 .hero__img-wrap {
+
   margin-top: 15px;
   overflow: hidden;
   padding-right: 0;
@@ -37,6 +38,5 @@
 .hero__img {
   transform: translateX(6%);
   border-radius: 20px;
-  /* TODO set max width for wrapping here */
   max-width: 375px;
 }
