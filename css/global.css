@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap');
+
+:root {
+  --padding: 20px 15px;
+  --bright-orange: #F16718;
+  --dark-orange: #ff6004;
+  --pale-orange: #FF9B62;
+  --navy-blue: #162542;
+  --pale-blue: #7B8BAD;
+  --light-gray: #E8EFF2;
+  --white: #FFFFFF;
+  --attr-color: #10809c;
+}
+
 *,
 *::before,
 *::after {
