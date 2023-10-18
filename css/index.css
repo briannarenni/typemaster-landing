@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap');
 
 :root {
+  --padding: 20px 15px;
   --bright-orange: #F16718;
   --dark-orange: #ff6004;
   --pale-orange: #FF9B62;
@@ -9,6 +10,10 @@
   --light-gray: #E8EFF2;
   --white: #FFFFFF;
   --attr-color: #10809c;
+}
+
+.flex {
+  display: flex;
 }
 
 /* Tag selectors */
@@ -39,6 +44,7 @@ h2 {
 h3 {
   font-size: 1.5em;
   line-height: 28px;
+  margin-block-end: 0;
 }
 
 p {
@@ -58,16 +64,14 @@ button {
 }
 
 .main {
-  display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
 /* Header */
 .header {
-  display: flex;
   justify-content: space-between;
-  padding: 20px 15px;
+  padding: var(--padding);
 }
 
 .header__cta-btn {
@@ -80,8 +84,6 @@ button {
 }
 
 /* Gallery */
-.gallery {}
-
 .gallery__imgs {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -96,6 +98,44 @@ button {
 
 .gallery__img-1-wrap {
   position: relative;
+}
+
+.gallery__text {
+  width: 90%;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  padding: var(--padding);
+}
+
+/* Features */
+.features {
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--padding);
+}
+
+.features img {
+  width: 65px;
+}
+
+.features h3 {
+  width: 50%;
+}
+
+.footer {
+  color: var(--pale-blue);
+  text-align: center;
+  text-transform: none;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.footer span {
+  font-weight: 500;
 }
 
 /* TODO Image overlay */
