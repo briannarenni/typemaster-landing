@@ -69,11 +69,11 @@ button {
 
 /* Gallery */
 .gallery__text {
-  width: 90%;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 10px;
-  padding: var(--padding);
+  margin-top: 30px;
+  padding: 10px 20px;
 }
 
 .gallery__imgs {
@@ -116,6 +116,7 @@ button {
   align-items: center;
   text-align: center;
   padding: var(--padding);
+  margin: 0 10px;
 }
 
 .features img {

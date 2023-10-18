@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <!-- <link rel="stylesheet" href="css/desktop.css"> -->
 </head>
 
 <body>
@@ -22,11 +24,13 @@
   <main class="main flex">
     <section class="hero flex">
       <div class="hero__content flex">
-        <h1>Typemaster keyboard</h1>
-        <p>
-          Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
-          mechanical typing experience.
-        </p>
+        <div class="hero__text flex">
+          <h1>Typemaster keyboard</h1>
+          <p>
+            Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
+            mechanical typing experience.
+          </p>
+        </div>
         <div class="hero__cta-wrap">
           <button class="hero__cta-btn">Pre-order now</button>
           <p class="hero__cta-text">Release on 5/27</p>
@@ -34,7 +38,7 @@
       </div>
 
       <picture class="hero__img-wrap">
-        <source media="(max-width:730px)" srcset="assets/mobile/keyboard-mobile.jpg">
+        <source media="(max-width:730px)" srcset="assets/mobile/keyboard-mobile.jpg 2x">
         <!-- TODO other breakpoints -->
         <!-- <source media="(min-width:650px)" srcset="#"> -->
         <img class="hero__img" src="assets/mobile/keyboard-mobile.jpg" alt="keyboard">
@@ -45,13 +49,13 @@
       <div class="gallery__imgs">
         <!-- TODO orange overlay -->
         <picture class="gallery__img-1-wrap">
-          <source media="(max-width:730px)" srcset="assets/mobile/phone-and-keyboard-mobile.jpg">
+          <source media="(max-width:730px)" srcset="assets/mobile/phone-and-keyboard-mobile.jpg 2x">
           <!-- <source media="(min-width:650px)" srcset="#"> -->
           <img class="gallery__img-1" src="assets/mobile/phone-and-keyboard-mobile.jpg" alt="Phone and keyboard">
         </picture>
 
         <picture class="gallery__img-2-wrap">
-          <source media="(max-width:730px)" srcset="assets/mobile/glass-and-keyboard-mobile.jpg">
+          <source media="(max-width:730px)" srcset="assets/mobile/glass-and-keyboard-mobile.jpg 2x">
           <!-- <source media="(min-width:650px)" srcset="#"> -->
           <img class="gallery__img-2" src="assets/mobile/glass-and-keyboard-mobile.jpg" alt="Glass and keyboard">
         </picture>

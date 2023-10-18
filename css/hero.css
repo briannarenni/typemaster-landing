@@ -1,17 +1,25 @@
 .hero {
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .hero__content {
-  max-width: 375px;
   flex-direction: column;
+  max-width: 95%;
   gap: 18px;
-  padding: var(--padding);
+  margin: 0 15px;
+}
+
+.hero__text {
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 15px;
 }
 
 .hero__cta-wrap {
   display: inline-flex;
   justify-content: space-between;
+  max-width: 90%;
 }
 
 .hero__cta-btn {
@@ -29,7 +37,6 @@
 }
 
 .hero__img-wrap {
-
   margin-top: 15px;
   overflow: hidden;
   padding-right: 0;
@@ -38,5 +45,4 @@
 .hero__img {
   transform: translateX(6%);
   border-radius: 20px;
-  max-width: 375px;
 }
