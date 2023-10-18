@@ -1,0 +1,46 @@
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero__content {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 15px;
+}
+
+.hero__cta-wrap {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.hero__cta-btn {
+  background-color: var(--bright-orange);
+  color: var(--white);
+}
+
+.hero__cta-btn:hover {
+  background-color: var(--pale-orange);
+}
+
+.hero__cta-text {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.hero__img-wrap {
+  margin-top: 15px;
+  overflow: hidden;
+  padding-right: 0;
+}
+
+.hero__img {
+  transform: translateX(6%);
+  border-radius: 20px;
+  /* TODO set max width for wrapping here */
+  max-width: 375px;
+}
