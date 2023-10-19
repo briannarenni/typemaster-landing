@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 730px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 700px)">
   <!-- <link rel="stylesheet" href="css/desktop.css"> -->
 </head>
 
@@ -38,25 +38,24 @@
       </div>
 
       <picture class="hero__img-wrap">
-        <source media="(max-width:730px)" srcset="assets/mobile/keyboard-mobile.jpg 2x">
+        <source media="(max-width:699px)" srcset="assets/mobile/keyboard-mobile.jpg">
+        <source media="(min-width:700px)" srcset="assets/tablet/keyboard-tablet.jpg">
         <!-- TODO other breakpoints -->
-        <!-- <source media="(min-width:650px)" srcset="#"> -->
         <img class="hero__img" src="assets/mobile/keyboard-mobile.jpg" alt="keyboard">
       </picture>
     </section>
 
     <section class="gallery">
       <div class="gallery__imgs">
-        <!-- TODO orange overlay -->
         <picture class="gallery__img-1-wrap">
-          <source media="(max-width:730px)" srcset="assets/mobile/phone-and-keyboard-mobile.jpg 2x">
-          <!-- <source media="(min-width:650px)" srcset="#"> -->
+          <source media="(max-width:699px)" width="200px" srcset="assets/mobile/phone-and-keyboard-mobile.jpg 2x">
+          <source media="(min-width:700px)" width="230px" srcset="assets/tablet/phone-and-keyboard-tablet.jpg 2x">
           <img class="gallery__img-1" src="assets/mobile/phone-and-keyboard-mobile.jpg" alt="Phone and keyboard">
         </picture>
 
         <picture class="gallery__img-2-wrap">
-          <source media="(max-width:730px)" srcset="assets/mobile/glass-and-keyboard-mobile.jpg 2x">
-          <!-- <source media="(min-width:650px)" srcset="#"> -->
+          <source media="(max-width:699px)" width="330px" srcset="assets/mobile/glass-and-keyboard-mobile.jpg 2x">
+          <source media="(min-width:700px)" width="475px" srcset="assets/tablet/glass-and-keyboard-tablet.jpg 2x">
           <img class="gallery__img-2" src="assets/mobile/glass-and-keyboard-mobile.jpg" alt="Glass and keyboard">
         </picture>
       </div>
@@ -70,7 +69,8 @@
       </div>
     </section>
 
-    <article class="features flex">
+    <!-- TODO Fix this shit -->
+    <article class="features ">
       <img src="assets/shared/icon-compatible.svg" alt="Compatible icon">
       <h3 class="feature__subtitle">Highly compatible</h3>
       <p class="feature__desc">
