@@ -24,8 +24,8 @@
   margin-inline-start: 0;
 }
 
-.gallery__desc {
-  margin-inline-start: 3em;
+.gallery__title {
+  width: 100%;
 }
 
 .gallery__imgs {
@@ -42,24 +42,15 @@
   transform: none;
 }
 
- .features {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   /* Creates 2 columns */
-   grid-template-rows: auto auto;
-   /* Creates 2 rows */
-   gap: 25px;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   padding: var(--padding);
-   margin: 0 1.5em;
- }
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
 
- .features > * {
-   /* If you want each feature to span a grid cell, you can set these properties */
-   grid-column: span 1;
-   /* Each feature takes up 1 column */
-   grid-row: span 1;
-   /* Each feature takes up 1 row */
- }
+.feature {
+  max-width: 300px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
