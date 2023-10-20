@@ -26,6 +26,7 @@
   display: inline-flex;
   justify-content: space-between;
   max-width: 90%;
+  padding: 0 1em;
 }
 
 .hero__cta-btn {
@@ -51,4 +52,6 @@
 .hero__img {
   transform: translateX(6%);
   border-radius: 20px;
+  max-height: 600px;
+  object-fit: cover;
 }

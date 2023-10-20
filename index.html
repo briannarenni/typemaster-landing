@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 700px)">
-  <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
       <picture class="hero__img-wrap">
         <source media="(max-width:699px)" srcset="assets/mobile/keyboard-mobile.jpg">
         <source media="(min-width:700px)" srcset="assets/tablet/keyboard-tablet.jpg">
-        <!-- TODO other breakpoints -->
+        <source media="(min-width:1024px)" srcset="assets/desktop/keyboard-tablet.jpg">
         <img class="hero__img" src="assets/mobile/keyboard-mobile.jpg" alt="keyboard">
       </picture>
     </section>
@@ -49,13 +49,15 @@
       <div class="gallery__imgs">
         <picture class="gallery__img-1-wrap">
           <source media="(max-width:699px)" width="200px" srcset="assets/mobile/phone-and-keyboard-mobile.jpg 2x">
-          <source media="(min-width:700px)" width="230px" srcset="assets/tablet/phone-and-keyboard-tablet.jpg 2x">
+          <source media="(min-width:700px)" width="200px" srcset="assets/tablet/phone-and-keyboard-tablet.jpg 2x">
+          <source media="(min-width:1024px)" width="230" srcset="assets/desktop/phone-and-keyboard-desktop.jpg 2x">
           <img class="gallery__img-1" src="assets/mobile/phone-and-keyboard-mobile.jpg" alt="Phone and keyboard">
         </picture>
 
         <picture class="gallery__img-2-wrap">
           <source media="(max-width:699px)" width="330px" srcset="assets/mobile/glass-and-keyboard-mobile.jpg 2x">
-          <source media="(min-width:700px)" width="475px" srcset="assets/tablet/glass-and-keyboard-tablet.jpg 2x">
+          <source media="(min-width:700px)" width="400px" srcset="assets/tablet/glass-and-keyboard-tablet.jpg 2x">
+          <source media="(min-width:1024px)" srcset="assets/desktop/glass-and-keyboard-desktop.jpg 2x">
           <img class="gallery__img-2" src="assets/mobile/glass-and-keyboard-mobile.jpg" alt="Glass and keyboard">
         </picture>
       </div>
@@ -69,7 +71,6 @@
       </div>
     </section>
 
-    <!-- TODO Fix this shit -->
     <article class="features">
       <div class="feature">
         <img src="assets/shared/icon-compatible.svg" alt="Compatible icon">
@@ -82,7 +83,7 @@
 
       <div class="feature">
         <img src="assets/shared/icon-bluetooth.svg" alt="Bluetooth icon">
-        <h3 class="feature__subtitle">Wireless with bluetooth</h3>
+        <h3 class="feature__subtitle">Wireless <br> with bluetooth</h3>
         <p class="feature__desc">
           Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
           Simply plug the unifying receiver into your computer.
